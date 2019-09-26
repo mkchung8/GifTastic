@@ -22,7 +22,7 @@ renderButtons();
         var character = $("#character-input").val().trim();
         topics.push(character)
         renderButtons();     
-        $("#character-input").text("")
+        
 
     });
 
