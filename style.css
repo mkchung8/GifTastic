@@ -1,3 +1,63 @@
+body {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+}
+
 h1 {
- text-align: center;
+    float: right;
+    margin-left: 20px;
+}
+
+#image-card {
+    margin-bottom: 20px;
+    float: left; 
+    width: 33%;
+    padding: 10px;
+    overflow: auto;
+    align-content: center;
+}
+
+.preview {
+    align-content: center;
+    height: 200px;
+    width: 400px;
+}
+
+p {
+ float: left;
+ align-content: left;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+#favorited {
+    float: right;
+}
+
+#character-form {
+    float: right;
+    clear: both;
+}
+
+.nav-link {
+    float: left;
+    
+}
+
+.nav-item {
+    float: left;
+}
+
+
+
+@media screen and (max-width: 620px) {
+    #logo {
+        position: center;
+    }
+    #character-form {
+        align-content: center;
+    }
 }

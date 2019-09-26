@@ -22,6 +22,7 @@ renderButtons();
         var character = $("#character-input").val().trim();
         topics.push(character)
         renderButtons();     
+        $("#character-input").text("")
 
     });
 
@@ -41,10 +42,12 @@ renderButtons();
                 var results = response.data
             for (var i=0; i < results.length; i++) {
                     var characterDiv = $("<div>")
+                    characterDiv.attr("id","image-card")
                     var p = $("<p>")
                     let rating = results[i].rating
                     p.text("Rating: " + rating.toUpperCase())
                     characterImage = $("<img>");
+                    characterImage.addClass("preview")
                     characterImage.attr("data-animate",results[i].images.fixed_height.url);
                     characterImage.attr("data-still", results[i].images.fixed_height_still.url);
                     characterImage.attr("data-state", "still")
