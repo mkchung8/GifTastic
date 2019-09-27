@@ -12,7 +12,8 @@ $(document).ready(function(){
         topicButton.text(topics[i])
         $("#button-display").append(topicButton)
     };
- 
+    
+    
 }; 
 
 renderButtons();
@@ -20,7 +21,8 @@ renderButtons();
     $("#add-character").on("click",function(event){
         event.preventDefault();
         var character = $("#character-input").val().trim();
-        topics.push(character)
+        topics.push(character);
+        $("#character-input").val("");
         renderButtons();     
         
 
